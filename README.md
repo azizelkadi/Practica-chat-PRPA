@@ -44,19 +44,19 @@ python client.py [client_port]
 
 - Enviar un mensaje a todos los usuarios:
 
-`[mensaje]`
+```[mensaje]```
 
 <br>
 
 - Enviar un mensaje privado a un usuario específico:
 
-`/p [destinatario] [mensaje]`
+```/p [destinatario] [mensaje]```
 
 <br>
 
 - Enviar un archivo:
 
-`/f [destinatario] [ruta_del_archivo]`
+```/f [destinatario] [ruta_del_archivo]```
 
 Si se indica `all` como destinatario, se enviará el archivo a todos los usuarios conectados.
 
@@ -64,7 +64,7 @@ Si se indica `all` como destinatario, se enviará el archivo a todos los usuario
 
 - Salir del chat:
 
-`quit`
+```quit```
 
 <br>
 
