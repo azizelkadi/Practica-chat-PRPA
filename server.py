@@ -90,7 +90,7 @@ def chat(ip_address, port):
 if __name__ == "__main__":
     # Variables de conexión
     ip_address = "127.0.0.1"
-    port = 6000
+    port = 600
 
     # Iniciamos el chat
     chat(ip_address, port)
