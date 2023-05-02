@@ -20,7 +20,7 @@ def send_msg_all(username, msg, clients, timestamp):
         with Client(address=(client_info['address'], client_info['port']),
                     authkey=client_info['authkey']) as conn: # abrimos una conexion con el cliente en la dirección y en el puerto dados
             if not client == username: #distinguimos el caso en el que el cliente es el propio usuario que manda el mensaje (remitente) o no lo es
-                conn.send(('msg', (username, msg), timestamp))
+                conn.send(('msg', (username, msg), timestamp)) #los mensajes enviados siempre son una tupla de 3 elementos. El primer elemento siempre es el tipo de dato que se envía
             else: #si coinciden ambos, mandamos un 0 en lugar del nombre del usuario remitente para distinguir entre los mensajes enviados y recibidos
                 conn.send(('msg', (0, msg), timestamp))
 
