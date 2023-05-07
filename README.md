@@ -1,4 +1,4 @@
-# Chat. Práctica obligatoria de programación distribuida.
+# Práctica obligatoria de programación distribuida.
 
 Autores: Abdelaziz el Kadi Lachehab, Álvaro Cámara Fernández, Rodrigo de la Nuez Moraleda, David Labrador Merino.
 
