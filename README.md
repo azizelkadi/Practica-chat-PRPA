@@ -1,4 +1,4 @@
-# Práctica obligatoria de programación distribuida.
+# Práctica obligatoria de Programación Distribuida.
 
 Autores: Abdelaziz el Kadi Lachehab, Álvaro Cámara Fernández, Rodrigo de la Nuez Moraleda, David Labrador Merino.
 
