@@ -1,6 +1,6 @@
 # Chat. Práctica obligatoria de programación distribuida.
 
-Autores: Abdelaziz el Kadi Lachehab, Álvaro Cámara Fernández, Rodrigo de la Nuez Moraleda, [completar]
+Autores: Abdelaziz el Kadi Lachehab, Álvaro Cámara Fernández, Rodrigo de la Nuez Moraleda, David Labrador Merino.
 
 Práctiga obligatoria en grupo del tema de "Programación distribuida" de la asignatura de PRPA.
 
