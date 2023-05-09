@@ -101,7 +101,7 @@ Este objeto tiene métodos para acceder y cambiar algunas de sus variables inter
 
 - `move`. Según el comando de movimiento en el tablero actualizamos la posición de la cabeza de la serpiente, con la peculiaridad de que si llegamos a los bordes del tablero en lugar de terminarse el juego, avanzará por el lado opuesto como si viviéramos en un mundo de *posición modular*. Por ejemplo, si un jugador se choca con el lado derecho su cabeza y cuerpo irán apareciendo por el lado izquierdo.
 
-- `update`. Esta función se utiliza para retirar la cola siempre que haya sido comida por el otro usuario. No añadiremos estos bloques a nuestra serpiente para facilitar que puedan mantenerse partidas prolongadas, pero si sumaremos los puntos correspondientes al marcador de la serpiente correspondinete.
+- `update`. Esta función se utiliza para retirar la cola siempre que haya sido comida por el otro usuario. No añadiremos estos bloques a la serpiente *depredador* para facilitar que puedan mantenerse partidas prolongadas, aunque si sumaremos los puntos correspondientes al marcador.
 
 <br>
 
