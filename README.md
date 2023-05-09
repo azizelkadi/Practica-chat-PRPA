@@ -66,6 +66,17 @@ python client.py [client_port]
 
 Si se indica `all` como destinatario, se enviará el archivo a todos los usuarios conectados.
 
+- Salir del chat:
+
+```
+quit
+```
+
+<br>
+
+- [pendientes de implementar más comandos]
+
+
 <br>
 
 # Juego de Snake para dos jugadores
@@ -113,12 +124,3 @@ Se crean dos nuevos objetos `Snake` y `AppleSprite` de tipo `pygame.sprite.Sprit
 Por último, se tiene un objeto `Display` que se encarga de crear y mostrar el tablero junto con todos los objetos correspondientes, actualizar dichos objetos con la información recibida de la sala y enviar comandos a la sala para que transforme los respectivos objetos.
 
 
-- Salir del chat:
-
-```
-quit
-```
-
-<br>
-
-- [pendientes de implementar más comandos]
