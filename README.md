@@ -99,7 +99,7 @@ Este objeto tiene métodos para acceder y cambiar algunas de sus variables inter
 
 - `go`. La serpiente debe moverse siempre por lo que este comando siempre será ejecutado cada vez que intercambiemos la información del juego entre la sala y los jugadores. Esta función se encarga de actualizar la dirección de movimiento de la serpietne asegurando que no se produzcan cambios bruscos.
 
-- `move`. Según el comando de movimiento en el tablero actualizamos la posición de la cabeza de la serpiente, con la peculiaridad de que si llegamos a los bordes del tablero en lugar de terminarse el juego, avanzará por el lado opuesto como si vivieramos en un mundo de *posición modular*. Por ejemplo, si un jugador se choca con el lado derecho su cabeza y cuerpo irán apareciendo por el lado izquierdo.
+- `move`. Según el comando de movimiento en el tablero actualizamos la posición de la cabeza de la serpiente, con la peculiaridad de que si llegamos a los bordes del tablero en lugar de terminarse el juego, avanzará por el lado opuesto como si viviéramos en un mundo de *posición modular*. Por ejemplo, si un jugador se choca con el lado derecho su cabeza y cuerpo irán apareciendo por el lado izquierdo.
 
 - `update`. Esta función se utiliza para retirar la cola siempre que haya sido comida por el otro usuario. No añadiremos estos bloques a nuestra serpiente para facilitar que puedan mantenerse partidas prolongadas, pero si sumaremos los puntos correspondientes al marcador de la serpiente correspondinete.
 
