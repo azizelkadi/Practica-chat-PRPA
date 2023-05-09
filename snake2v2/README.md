@@ -3,8 +3,6 @@
 
 En esta carpeta se encuentar los archivos a la práctica complementaria consistente en la realización de un juego de ejecución distribuida, en nuestro caso hemos creado un juego basado en el tradicional *snake* con modificaciones para que dos jugadores puedan participar e interactuar simultámente. 
 
-<br>
-
 ## snake_sala.py
 
 Este archivo se encarga de crear una sala común que recibe los *comandos* enviados por los jugadores. Estos comandos pueden estar relacionados con tareas de movimiento `up`, `down`, `left`, `right`, `go`, o de colisión: `eat` (con la manzana), `collide` (con la otra serpiente). 
@@ -23,6 +21,10 @@ Este objeto tiene métodos para acceder y cambiar algunas de sus variables inter
 
 2) `Apple`. Guarda la posición de la manzana `pos` y una variable booleana `spawn` que indica si debe reaparacer en el tablero por haber sido consumida por alguno de los dos jugadores. De igual manera, se tienen varios métodos para acceder a estas variables internas y se tiene una función `update(self,player)` para indicar que ha sido consumida y tener el efecto deseado sobre el cuerpo de la serpiente que ha interactuado con el objeto.
 
-3) `Game`. Guarda la lista de los dos jugadores `players`, la manazana del juego `apple`, el marcador `score`, una variable que indica si el juego está en ejecución y un semáforo binario para asegurar la atomicidad de algunas de las operaciones definidas en este objeto. Estas operaciones son `go(self,player)`, `move(self,player)`, `moveUp(self,player)`, `moveDown(self,player)`, `moveRight(self,player)`, `moveLeft(self,player)`, `apple_interaction(self,side)` para cuando la manzana es comida y `snakes_interaction(self,side)` para cuando ha habido una colisión entre las serpientes. Además, cuenta con una función `get_info(self)` para transmitir a los jugadores la información global, para lo que es imprescindible que las variables de este objeto sean variables compartias mediante un `Manager`.
+3) `Game`. Guarda la lista de los dos jugadores `players`, la manazana del juego `apple`, el marcador `score`, una variable que indica si el juego está en ejecución y un semáforo binario para asegurar la atomicidad de algunas de las operaciones definidas en este objeto. Estas operaciones son `go`, `move`, `moveUp`, `moveDown`, `moveRight`, `moveLeft`, `apple_interaction` para cuando la manzana es comida y `snakes_interaction` para cuando ha habido una colisión entre las serpientes. Además, cuenta con una función `get_info` para transmitir a los jugadores la información global, para lo que es imprescindible que las variables de este objeto sean variables compartias mediante un `Manager`.
+
+<br>
+
+Para la ejecución de la sala común, se espera que dos ususiaros se conecten al servidor mediante la introdución de una dirección IP (en caso de no ser introducida se eligirá `127.0.0.1` por defecto). Tras esto el juego irá avanzando realizando un bucle de varios procesos: la sala manda la información a los jugadores, los jugadores envián comandos a la sala y la sala recalcula la posición de los objetos del tablero para después enviar de nuevo la información actualizada.
 
 ## snake_player.py
