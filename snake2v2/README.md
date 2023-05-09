@@ -36,3 +36,9 @@ Este objeto tiene métodos para acceder y cambiar algunas de sus variables inter
 Para la ejecución de la sala común, se espera que dos ususiaros se conecten al servidor mediante la introdución de una dirección IP (en caso de no ser introducida se eligirá `127.0.0.1` por defecto). Tras esto el juego irá avanzando realizando un bucle de varios procesos: la sala manda la información a los jugadores, los jugadores envián comandos a la sala y la sala recalcula la posición de los objetos del tablero para después enviar de nuevo la información actualizada.
 
 ## snake_player.py
+
+Este programa cuenta con sendos objetos `Player`, `Apple` y `Game` para recoger la información transmitida por la sala y guardarla localmente para realizar las operaciones relativas al jugador.
+
+Se crean dos nuevos objetos `Snake` y `AppleSprite` de tipo `pygame.sprite.Sprite` para visualizar y actualizar tanto el cuerpo de las serpientes (verde para el jugador 1, amarillo para el jugador 2) como el objeto correspondiente a la manzana.
+
+Por último, se tiene un objeto `Display` que se encarga de crear y mostrar el tablero junto con todos los objetos correspondientes, actualizar dichos objetos con la información recibida de la sala y enviar comandos a la sala para que transforme los respectivos objetos.
