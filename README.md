@@ -119,7 +119,7 @@ Para la ejecución de la sala común, se espera que dos ususiaros se conecten al
 
 Este programa cuenta con sendos objetos `Player`, `Apple` y `Game` para recoger la información transmitida por la sala y guardarla localmente para realizar las operaciones relativas al jugador.
 
-Se crean dos nuevos objetos `Snake` y `AppleSprite` de tipo `pygame.sprite.Sprite` para visualizar y actualizar tanto el cuerpo de las serpientes (verde para el jugador 1, amarillo para el jugador 2) como el objeto correspondiente a la manzana.
+Se crean dos nuevos objetos `Snake` y `AppleSprite` de tipo `pygame.sprite.Sprite` para visualizar y actualizar tanto el cuerpo de las serpientes (verde para el jugador 1, amarillo para el jugador 2) así como la manzana.
 
 Por último, se tiene un objeto `Display` que se encarga de crear y mostrar el tablero junto con todos los objetos correspondientes, actualizar dichos objetos con la información recibida de la sala y enviar comandos a la sala para que transforme los respectivos objetos.
 
