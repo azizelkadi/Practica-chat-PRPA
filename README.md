@@ -93,7 +93,7 @@ Este archivo se encarga de crear una sala común que recibe los *comandos* envia
 
 Para ello, es crucial crear 3 objetos distintos:
 
-1) `Player`. Guarda la información referente al lado del jugador (`side`), la posición de la cabeza de la serpiente (`pos`), una lista con las posiciones que constituyen el cuerpo de la serpiente en ese instante (`body`), la dirección en la que avanza la serpiente (`direction`) y la dirección a la que quiere cambiar (`change_to`). Esta última es muy importante para simular el movimiento del juego tradicional pues no queremos que se puedan realizar cambios buscos (e.g. `RIGTH -> LEFT`).
+1) `Player`. Guarda la información referente al lado del jugador (`side`), la posición de la cabeza de la serpiente (`pos`), una lista con las posiciones que constituyen el cuerpo de la serpiente en ese instante (`body`), la dirección en la que avanza la serpiente (`direction`) y la dirección a la que quiere cambiar (`change_to`). Esta última es muy importante para simular el movimiento del juego tradicional pues no queremos que se puedan realizar cambios bruscos (e.g. `RIGTH -> LEFT`).
 
 Este objeto tiene métodos para acceder y cambiar algunas de sus variables internas. Además, se han creado los siguientes métodos para actualizar la posición del jugador en el tablero según los inputs introducidos:
 
