@@ -1,4 +1,3 @@
-
 # Juego de Snake para dos jugadores
 
 En esta carpeta se encuentar los archivos a la práctica complementaria consistente en la realización de un juego de ejecución distribuida, en nuestro caso hemos creado un juego basado en el tradicional *snake* con modificaciones para que dos jugadores puedan participar e interactuar simultámente. 
@@ -13,19 +12,19 @@ Este archivo se encarga de crear una sala común que recibe los *comandos* envia
 
 Para ello, es crucial crear 3 objetos distintos:
 
-1) `Player`. Guarda la información referente al lado del jugador (`side`), la posición de la cabeza de la serpiente (`pos`), una lista con las posiciones que constituyen el cuerpo de la serpiente en ese instante (`body`), la dirección en la que avanza la serpiente (`direction`) y la dirección a la que quiere cambiar (`change_to`). Esta última es muy importante para simular el movimiento del juego tradicional pues no queremos que se puedan realizar cambios buscos (e.g. `RIGTH -> LEFT`).
+1) `Player`. Guarda la información referente al lado del jugador (`side`), la posición de la cabeza de la serpiente (`pos`), una lista con las posiciones que constituyen el cuerpo de la serpiente en ese instante (`body`), la dirección en la que avanza la serpiente (`direction`) y la dirección a la que quiere cambiar (`change_to`). Esta última es muy importante para simular el movimiento del juego tradicional pues no queremos que se puedan realizar cambios bruscos (e.g. `RIGTH -> LEFT`).
 
 Este objeto tiene métodos para acceder y cambiar algunas de sus variables internas. Además, se han creado los siguientes métodos para actualizar la posición del jugador en el tablero según los inputs introducidos:
 
 - `go`. La serpiente debe moverse siempre por lo que este comando siempre será ejecutado cada vez que intercambiemos la información del juego entre la sala y los jugadores. Esta función se encarga de actualizar la dirección de movimiento de la serpietne asegurando que no se produzcan cambios bruscos.
 
-- `move`. Según el comando de movimiento en el tablero actualizamos la posición de la cabeza de la serpiente, con la peculiaridad de que si llegamos a los bordes del tablero en lugar de terminarse el juego, avanzará por el lado opuesto como si vivieramos en un mundo de *posición modular*. Por ejemplo, si un jugador se choca con el lado derecho su cabeza y cuerpo irán apareciendo por el lado izquierdo.
+- `move`. Según el comando de movimiento en el tablero actualizamos la posición de la cabeza de la serpiente, con la peculiaridad de que si llegamos a los bordes del tablero en lugar de terminarse el juego, avanzará por el lado opuesto como si viviéramos en un mundo de *posición modular*. Por ejemplo, si un jugador se choca con el lado derecho su cabeza y cuerpo irán apareciendo por el lado izquierdo.
 
-- `update`. Esta función se utiliza para retirar la cola siempre que haya sido comida por el otro usuario. No añadiremos estos bloques a nuestra serpiente para facilitar que puedan mantenerse partidas prolongadas, pero si sumaremos los puntos correspondientes al marcador de la serpiente correspondinete.
+- `update`. Esta función se utiliza para retirar la cola siempre que haya sido comida por el otro usuario. No añadiremos estos bloques a la serpiente *depredador* para facilitar que puedan mantenerse partidas prolongadas, aunque si sumaremos los puntos correspondientes al marcador.
 
 <br>
 
-2) `Apple`. Guarda la posición de la manzana `pos` y una variable booleana `spawn` que indica si debe reaparacer en el tablero por haber sido consumida por alguno de los dos jugadores. De igual manera, se tienen varios métodos para acceder a estas variables internas y se tiene una función `update(self,player)` para indicar que ha sido consumida y tener el efecto deseado sobre el cuerpo de la serpiente que ha interactuado con el objeto.
+2) `Apple`. Guarda la posición de la manzana `pos` y una variable booleana `spawn` que indica si debe reaparacer en el tablero por haber sido consumida por alguno de los dos jugadores. De igual manera, se tienen varios métodos para acceder a estas variables internas y se tiene una función `update` para indicar que ha sido consumida y tener el efecto deseado sobre el cuerpo de la serpiente con la que se ha interactuado.
 
 <br> 
 
@@ -39,6 +38,6 @@ Para la ejecución de la sala común, se espera que dos ususiaros se conecten al
 
 Este programa cuenta con sendos objetos `Player`, `Apple` y `Game` para recoger la información transmitida por la sala y guardarla localmente para realizar las operaciones relativas al jugador.
 
-Se crean dos nuevos objetos `Snake` y `AppleSprite` de tipo `pygame.sprite.Sprite` para visualizar y actualizar tanto el cuerpo de las serpientes (verde para el jugador 1, amarillo para el jugador 2) como el objeto correspondiente a la manzana.
+Se crean dos nuevos objetos `Snake` y `AppleSprite` de tipo `pygame.sprite.Sprite` para visualizar y actualizar tanto el cuerpo de las serpientes (verde para el jugador 1, amarillo para el jugador 2) así como la manzana.
 
 Por último, se tiene un objeto `Display` que se encarga de crear y mostrar el tablero junto con todos los objetos correspondientes, actualizar dichos objetos con la información recibida de la sala y enviar comandos a la sala para que transforme los respectivos objetos.
