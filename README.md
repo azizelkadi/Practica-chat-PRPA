@@ -1,6 +1,10 @@
 # Práctica obligatoria de Programación Distribuida.
 
-Autores: Abdelaziz el Kadi Lachehab, Álvaro Cámara Fernández, Rodrigo de la Nuez Moraleda, David Labrador Merino.
+Autores de la práctica: 
+- Abdelaziz el Kadi Lachehab
+- Álvaro Cámara Fernández
+- Rodrigo de la Nuez Moraleda
+- David Labrador Merino.
 
 Práctiga obligatoria en grupo del tema de "Programación distribuida" de la asignatura de PRPA.
 
