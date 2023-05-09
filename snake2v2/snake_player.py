@@ -137,7 +137,6 @@ class Snake(pygame.sprite.Sprite):
         self.image.fill(BLACK)
         for pos in player.body:
             pygame.draw.rect(self.image, color, pygame.Rect(pos[0]%SIZE[X], pos[1]%SIZE[Y], 10, 10))
-        print(player.get_side(),player.body)
 
     def __str__(self):
         return f"S<{self.player}>"
@@ -200,7 +199,6 @@ class Display():
             events.append("eat")
         if self.snakes[1-side].player.pos in self.snakes[side].player.body:
             events.append("collide")
-            print("collide")
         events.append("go")
         return events
     

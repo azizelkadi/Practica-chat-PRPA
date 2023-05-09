@@ -72,11 +72,8 @@ class Player():
 
     def update(self, player):
         if player.pos in self.body:
-            print("yas")
             body = self.get_body()
-            print(body.index(player.pos))
             body = body[:max(body.index(player.pos),1)]
-            print(body)
             self.body = body
 
     def __str__(self):
