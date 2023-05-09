@@ -105,7 +105,7 @@ Este objeto tiene métodos para acceder y cambiar algunas de sus variables inter
 
 <br>
 
-2) `Apple`. Guarda la posición de la manzana `pos` y una variable booleana `spawn` que indica si debe reaparacer en el tablero por haber sido consumida por alguno de los dos jugadores. De igual manera, se tienen varios métodos para acceder a estas variables internas y se tiene una función `update(self,player)` para indicar que ha sido consumida y tener el efecto deseado sobre el cuerpo de la serpiente que ha interactuado con el objeto.
+2) `Apple`. Guarda la posición de la manzana `pos` y una variable booleana `spawn` que indica si debe reaparacer en el tablero por haber sido consumida por alguno de los dos jugadores. De igual manera, se tienen varios métodos para acceder a estas variables internas y se tiene una función `update(self,player)` para indicar que ha sido consumida y tener el efecto deseado sobre el cuerpo de la serpiente con la que se ha interactuado.
 
 <br> 
 
