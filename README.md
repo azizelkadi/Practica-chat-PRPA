@@ -72,12 +72,6 @@ python client.py [client_port]
 
 Si se indica `all` como destinatario, se enviará el archivo a todos los usuarios conectados.
 
-- Salir del chat:
-
-```
-quit
-```
-
 <br>
 
 - Mostrar usuarios conectados
@@ -86,8 +80,13 @@ quit
 /a
 ```
 
-
 <br>
+
+- Salir del chat:
+
+```
+quit
+```
 
 # Juego de Snake para dos jugadores
 
