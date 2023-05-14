@@ -10,7 +10,9 @@ Práctiga obligatoria en grupo del tema de "Programación distribuida" de la asi
 
 <br>
 
-# Características del chat
+# Chat
+
+## Características del chat
 
 1. Envío de mensajes a todos los usuarios conectados.
 2. Envío de mensajes privados a un usuario específico.
@@ -19,9 +21,9 @@ Práctiga obligatoria en grupo del tema de "Programación distribuida" de la asi
 
 <br>
 
-# Instrucciones
+## Instrucciones
 
-## Iniciar el servidor
+### Iniciar el servidor
 
 Para inicial el servidor, ejecute el archivo `server.py` en la máquina donde quiera alojar el servidor. Por defecto, el servidor se iniciará en la dirección IP `127.0.0.1` y el puerto `6000`.
 
@@ -31,7 +33,7 @@ python server.py
 
 <br>
 
-## Conectarse como cliente
+### Conectarse como cliente
 
 1. Ejecute el archivo `client.py` en la máquina del cliente que quiera conectarse al chat, indicando el puerto deseado. Por defecto, el cliente se iniciará en la dirección IP `127.0.0.1` y el puerto `6001`.
 ```
@@ -44,7 +46,7 @@ python client.py [client_port]
 
 <br>
 
-## Uso del chat
+### Uso del chat
 
 - Enviar un mensaje a todos los usuarios:
 
@@ -78,7 +80,11 @@ quit
 
 <br>
 
-- [pendientes de implementar más comandos]
+- Mostrar usuarios conectados
+
+```
+/a
+```
 
 
 <br>
