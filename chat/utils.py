@@ -42,7 +42,7 @@ def send_msg_private(sender, recipient, msg, clients, timestamp):
     else:
         msg_error = f"Error: Usuario {recipient} no encontrado."
         print(msg_error)
-        send_msg_private('Server', sender, msg_error + 'Usa /a para ver los usuarios conectados.', clients, timestamp)
+        send_msg_private('Server', sender, msg_error + ' Usa /a para ver los usuarios conectados.', clients, timestamp)
 
 
 # Enviar estado de conexión a todos los usuarios, se ejecutará cuando un usuario cambie su estado
