@@ -122,7 +122,7 @@ Este objeto tiene métodos para acceder y cambiar algunas de sus variables inter
 
 <br>
 
-Para la ejecución de la sala común, se espera que dos ususiaros se conecten al servidor mediante la introdución de una dirección IP (en caso de no ser introducida se eligirá `127.0.0.1` por defecto). Tras esto el juego irá avanzando realizando un bucle de varios procesos: la sala manda la información a los jugadores, los jugadores envián comandos a la sala y la sala recalcula la posición de los objetos del tablero para después enviar de nuevo la información actualizada.
+Para la ejecución de la sala común, se espera que dos ususiaros se conecten al servidor mediante la introdución de una dirección IP (en caso de no ser introducida se eligirá `127.0.0.1` por defecto). Tras esto el juego irá avanzando realizando un bucle de varios procesos: la sala manda la información a los jugadores, los jugadores envián comandos a la sala y la sala recalcula la posición de los objetos del tablero para después enviar la información actualizada.
 
 ## snake_player.py
 
