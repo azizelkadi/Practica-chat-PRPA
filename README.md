@@ -19,7 +19,6 @@ Práctiga obligatoria en grupo del tema de "Programación distribuida" de la asi
 3. Compartir archivos con todos los usuarios conectados.
 4. Compartir archivos de manera privada con un usuario específico.
 
-<br>
 
 ## Instrucciones
 
@@ -31,7 +30,6 @@ Para inicial el servidor, ejecute el archivo `server.py` en la máquina donde qu
 python server.py
 ```
 
-<br>
 
 ### Conectarse como cliente
 
@@ -44,7 +42,6 @@ python client.py [client_port]
 
 3. Ya está conectado al chat. Puede comenzar a enviar mensajes y archivos. Para enviar un mensaje deberá escribirlo en la terminal y pulsar Enter.
 
-<br>
 
 ### Uso del chat
 
@@ -54,7 +51,6 @@ python client.py [client_port]
 [mensaje]
 ```
 
-<br>
 
 - Enviar un mensaje privado a un usuario específico:
 
@@ -62,7 +58,6 @@ python client.py [client_port]
 /p [destinatario] [mensaje]
 ```
 
-<br>
 
 - Enviar un archivo:
 
@@ -72,7 +67,6 @@ python client.py [client_port]
 
 Si se indica `all` como destinatario, se enviará el archivo a todos los usuarios conectados.
 
-<br>
 
 - Mostrar usuarios conectados
 
@@ -80,7 +74,6 @@ Si se indica `all` como destinatario, se enviará el archivo a todos los usuario
 /a
 ```
 
-<br>
 
 - Salir del chat:
 
