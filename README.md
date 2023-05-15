@@ -35,7 +35,7 @@ python server.py
 
 ### Conectarse como cliente
 
-1. Ejecute el archivo `client.py` en la máquina del cliente que quiera conectarse al chat, indicando el puerto deseado. Por defecto, el cliente se iniciará en la dirección IP `127.0.0.1` y el puerto `6001`.
+1. Ejecute el archivo `client.py` en la máquina del cliente que quiera conectarse al chat, indicando el puerto deseado. Por defecto, el cliente se iniciará en la dirección IP `127.0.0.1` y el puerto `6001`. No puede haber dos clientes con el mismo puerto.
 ```
 python client.py [client_port]
 ```
