@@ -88,6 +88,8 @@ Si se indica `all` como destinatario, se enviará el archivo a todos los usuario
 quit
 ```
 
+<br>
+
 # Juego de Snake para dos jugadores
 
 En esta carpeta se encuentar los archivos a la práctica complementaria consistente en la realización de un juego de ejecución distribuida, en nuestro caso hemos creado un juego basado en el tradicional *snake* con modificaciones para que dos jugadores puedan participar e interactuar simultámente. Para ejecutar el juego nos podemos conectar a la terminal de Linux y, desde la carpeta que contiene los ficheros correspondientes, crear una sala (`python3 snake_sala.py`) a la que podrán conectarse jugadores desde distintos positivos (`python3 snake_player.py`).
